@@ -1,0 +1,139 @@
+<link rel="stylesheet" href="../css/styles.css">
+
+<div class="container">
+  <!-- Shown only to logged-in users in Milestone 4 -->
+  <div class="borrowd-welcome d-none" role="status">
+    <span>Welcome back, Amina! You have 2 active loans.</span>
+    <a href="#my-loans">View my loans</a>
+  </div>
+
+  <section class="borrowd-hero p-4 p-md-5 mb-5" aria-labelledby="hero-title">
+    <div class="row align-items-center">
+      <div class="col-lg-8">
+        <p class="text-uppercase small fw-semibold text-primary mb-3">Your library, made simple</p>
+        <h1 id="hero-title" class="display-4 fw-semibold mb-3">Borrow a book, return a story.</h1>
+        <p class="lead text-muted mb-4">BorrowD makes it easy to find, borrow and review books from our library.</p>
+        <div class="d-flex flex-wrap gap-2">
+          <a class="btn btn-primary px-4" href="#books">Browse books</a>
+          <a class="btn btn-outline-primary px-4" href="#register">Create account</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="borrowd-section mb-5" aria-labelledby="how-it-works-title">
+    <div class="mb-4">
+      <p class="text-uppercase small fw-semibold text-primary mb-2">A simple way to read more</p>
+      <h2 id="how-it-works-title" class="h3 mb-0">How it works</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-12 col-md-4">
+        <article class="borrowd-step h-100 p-4">
+          <span class="borrowd-step-number" aria-hidden="true">1</span>
+          <h3 class="h5 mt-3">Find</h3>
+          <p class="text-muted mb-0">Search the catalogue for your next great read.</p>
+        </article>
+      </div>
+      <div class="col-12 col-md-4">
+        <article class="borrowd-step h-100 p-4">
+          <span class="borrowd-step-number" aria-hidden="true">2</span>
+          <h3 class="h5 mt-3">Borrow</h3>
+          <p class="text-muted mb-0">Borrow your chosen book with one click.</p>
+        </article>
+      </div>
+      <div class="col-12 col-md-4">
+        <article class="borrowd-step h-100 p-4">
+          <span class="borrowd-step-number" aria-hidden="true">3</span>
+          <h3 class="h5 mt-3">Return and review</h3>
+          <p class="text-muted mb-0">Return on time and share your thoughts.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="borrowd-section mb-5" aria-labelledby="recently-added-title">
+    <div class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-end gap-2 mb-4">
+      <div>
+        <p class="text-uppercase small fw-semibold text-primary mb-2">Fresh on the shelves</p>
+        <h2 id="recently-added-title" class="h3 mb-0">Recently added</h2>
+      </div>
+      <a class="borrowd-section-link" href="#books">See all books</a>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="card borrowd-book-card h-100">
+          <div class="card-img-top bg-light border-bottom d-flex align-items-center justify-content-center py-5">
+            <span class="text-muted">No cover</span>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h3 class="h5">Pride and Prejudice</h3>
+            <p class="text-muted mb-2">Jane Austen</p>
+            <div class="mb-3">
+              <span class="badge text-bg-secondary">Classics</span>
+              <span class="badge text-bg-success">Available</span>
+            </div>
+            <div class="mt-auto d-flex gap-2">
+              <a href="#book-details" class="btn btn-outline-primary btn-sm">View details</a>
+              <button type="button" class="btn btn-primary btn-sm">Borrow</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="card borrowd-book-card h-100">
+          <div class="card-img-top bg-light border-bottom d-flex align-items-center justify-content-center py-5">
+            <span class="text-muted">No cover</span>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h3 class="h5">Frankenstein</h3>
+            <p class="text-muted mb-2">Mary Shelley</p>
+            <div class="mb-3">
+              <span class="badge text-bg-secondary">Fiction</span>
+              <span class="badge text-bg-secondary">Borrowed</span>
+            </div>
+            <div class="mt-auto d-flex gap-2">
+              <a href="#book-details" class="btn btn-outline-primary btn-sm">View details</a>
+              <button type="button" class="btn btn-primary btn-sm" disabled>Borrow</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="card borrowd-book-card h-100">
+          <div class="card-img-top bg-light border-bottom d-flex align-items-center justify-content-center py-5">
+            <span class="text-muted">No cover</span>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h3 class="h5">The Time Machine</h3>
+            <p class="text-muted mb-2">H. G. Wells</p>
+            <div class="mb-3">
+              <span class="badge text-bg-secondary">Fiction</span>
+              <span class="badge text-bg-success">Available</span>
+            </div>
+            <div class="mt-auto d-flex gap-2">
+              <a href="#book-details" class="btn btn-outline-primary btn-sm">View details</a>
+              <button type="button" class="btn btn-primary btn-sm">Borrow</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="borrowd-section pb-4" aria-labelledby="categories-title">
+    <div class="mb-4">
+      <p class="text-uppercase small fw-semibold text-primary mb-2">Explore the catalogue</p>
+      <h2 id="categories-title" class="h3 mb-0">Browse by category</h2>
+    </div>
+    <div class="d-flex flex-wrap gap-2">
+      <a class="borrowd-category-pill" href="#books">Fiction</a>
+      <a class="borrowd-category-pill" href="#books">Classics</a>
+      <a class="borrowd-category-pill" href="#books">Science</a>
+      <a class="borrowd-category-pill" href="#books">History</a>
+      <a class="borrowd-category-pill" href="#books">Fantasy</a>
+    </div>
+  </section>
+</div>

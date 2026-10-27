@@ -1,0 +1,167 @@
+<div class="container">
+  <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-2 mb-4">
+    <div>
+      <h2 class="mb-1">Books</h2>
+      <p class="text-muted mb-0">Browse the BorrowD catalogue</p>
+    </div>
+  </div>
+
+  <form class="row g-3 align-items-end mb-4">
+    <div class="col-12 col-md-5">
+      <label for="book-search" class="form-label">Search</label>
+      <input type="search" class="form-control" id="book-search" placeholder="Search by title or author">
+    </div>
+    <div class="col-12 col-md-3">
+      <label for="book-category" class="form-label">Category</label>
+      <select class="form-select" id="book-category">
+        <option>All categories</option>
+        <option>Fiction</option>
+        <option>Classics</option>
+        <option>Science</option>
+        <option>History</option>
+        <option>Fantasy</option>
+      </select>
+    </div>
+    <div class="col-12 col-md-2">
+      <label for="book-availability" class="form-label">Availability</label>
+      <select class="form-select" id="book-availability">
+        <option>All</option>
+        <option>Available</option>
+        <option>Borrowed</option>
+      </select>
+    </div>
+    <div class="col-12 col-md-2">
+      <button type="button" class="btn btn-primary w-100">Search</button>
+    </div>
+  </form>
+
+  <div class="row g-4">
+    <div class="col-12 col-md-6 col-lg-4">
+      <article class="card h-100 shadow-sm">
+        <div class="card-img-top bg-light border-bottom d-flex align-items-center justify-content-center py-5">
+          <span class="text-muted">No cover</span>
+        </div>
+        <div class="card-body d-flex flex-column">
+          <h3 class="h5">Pride and Prejudice</h3>
+          <p class="text-muted mb-2">Jane Austen</p>
+          <div class="mb-3">
+            <span class="badge text-bg-secondary">Classics</span>
+            <span class="badge text-bg-success">Available</span>
+          </div>
+          <div class="mt-auto d-flex gap-2">
+            <a href="#book-details" class="btn btn-outline-primary btn-sm">View details</a>
+            <button type="button" class="btn btn-primary btn-sm">Borrow</button>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+      <article class="card h-100 shadow-sm">
+        <div class="card-img-top bg-light border-bottom d-flex align-items-center justify-content-center py-5">
+          <span class="text-muted">No cover</span>
+        </div>
+        <div class="card-body d-flex flex-column">
+          <h3 class="h5">Frankenstein</h3>
+          <p class="text-muted mb-2">Mary Shelley</p>
+          <div class="mb-3">
+            <span class="badge text-bg-secondary">Fiction</span>
+            <span class="badge text-bg-secondary">Borrowed</span>
+          </div>
+          <div class="mt-auto d-flex gap-2">
+            <a href="#book-details" class="btn btn-outline-primary btn-sm">View details</a>
+            <button type="button" class="btn btn-primary btn-sm" disabled>Borrow</button>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+      <article class="card h-100 shadow-sm">
+        <div class="card-img-top bg-light border-bottom d-flex align-items-center justify-content-center py-5">
+          <span class="text-muted">No cover</span>
+        </div>
+        <div class="card-body d-flex flex-column">
+          <h3 class="h5">The Time Machine</h3>
+          <p class="text-muted mb-2">H. G. Wells</p>
+          <div class="mb-3">
+            <span class="badge text-bg-secondary">Fiction</span>
+            <span class="badge text-bg-success">Available</span>
+          </div>
+          <div class="mt-auto d-flex gap-2">
+            <a href="#book-details" class="btn btn-outline-primary btn-sm">View details</a>
+            <button type="button" class="btn btn-primary btn-sm">Borrow</button>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+      <article class="card h-100 shadow-sm">
+        <div class="card-img-top bg-light border-bottom d-flex align-items-center justify-content-center py-5">
+          <span class="text-muted">No cover</span>
+        </div>
+        <div class="card-body d-flex flex-column">
+          <h3 class="h5">On the Origin of Species</h3>
+          <p class="text-muted mb-2">Charles Darwin</p>
+          <div class="mb-3">
+            <span class="badge text-bg-secondary">Science</span>
+            <span class="badge text-bg-success">Available</span>
+          </div>
+          <div class="mt-auto d-flex gap-2">
+            <a href="#book-details" class="btn btn-outline-primary btn-sm">View details</a>
+            <button type="button" class="btn btn-primary btn-sm">Borrow</button>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+      <article class="card h-100 shadow-sm">
+        <div class="card-img-top bg-light border-bottom d-flex align-items-center justify-content-center py-5">
+          <span class="text-muted">No cover</span>
+        </div>
+        <div class="card-body d-flex flex-column">
+          <h3 class="h5">The History of the Peloponnesian War</h3>
+          <p class="text-muted mb-2">Thucydides</p>
+          <div class="mb-3">
+            <span class="badge text-bg-secondary">History</span>
+            <span class="badge text-bg-secondary">Borrowed</span>
+          </div>
+          <div class="mt-auto d-flex gap-2">
+            <a href="#book-details" class="btn btn-outline-primary btn-sm">View details</a>
+            <button type="button" class="btn btn-primary btn-sm" disabled>Borrow</button>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+      <article class="card h-100 shadow-sm">
+        <div class="card-img-top bg-light border-bottom d-flex align-items-center justify-content-center py-5">
+          <span class="text-muted">No cover</span>
+        </div>
+        <div class="card-body d-flex flex-column">
+          <h3 class="h5">Alice's Adventures in Wonderland</h3>
+          <p class="text-muted mb-2">Lewis Carroll</p>
+          <div class="mb-3">
+            <span class="badge text-bg-secondary">Fantasy</span>
+            <span class="badge text-bg-success">Available</span>
+          </div>
+          <div class="mt-auto d-flex gap-2">
+            <a href="#book-details" class="btn btn-outline-primary btn-sm">View details</a>
+            <button type="button" class="btn btn-primary btn-sm">Borrow</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <nav class="mt-4" aria-label="Books catalogue pages">
+    <ul class="pagination justify-content-center">
+      <li class="page-item active" aria-current="page"><a class="page-link" href="#books">1</a></li>
+      <li class="page-item"><a class="page-link" href="#books">2</a></li>
+      <li class="page-item"><a class="page-link" href="#books">3</a></li>
+    </ul>
+  </nav>
+</div>
