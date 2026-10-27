@@ -1,0 +1,72 @@
+<div class="container">
+  <div class="row g-4">
+    <div class="col-12 col-lg-4">
+      <div class="card shadow-sm h-100">
+        <div class="card-body">
+          <h2 class="h4">Amina Hodžić</h2>
+          <p class="text-muted mb-3">amina@example.com</p>
+          <p class="mb-2"><span class="badge text-bg-primary">User</span></p>
+          <p class="small text-muted mb-0">Member since: September 2026</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-8">
+      <div class="card shadow-sm mb-4">
+        <div class="card-body">
+          <h2 class="h4">Edit profile</h2>
+          <form>
+            <div class="row g-3">
+              <div class="col-12 col-md-6">
+                <label for="profile-first-name" class="form-label">First name</label>
+                <input type="text" class="form-control" id="profile-first-name" name="firstName" value="Amina"
+                  required>
+                <div class="invalid-feedback">Please enter your first name.</div>
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="profile-last-name" class="form-label">Last name</label>
+                <input type="text" class="form-control" id="profile-last-name" name="lastName" value="Hodžić"
+                  required>
+                <div class="invalid-feedback">Please enter your last name.</div>
+              </div>
+              <div class="col-12">
+                <label for="profile-email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="profile-email" name="email" value="amina@example.com"
+                  required>
+                <div class="invalid-feedback">Please enter a valid email address.</div>
+              </div>
+              <div class="col-12">
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h2 class="h4">Change password</h2>
+          <form>
+            <div class="mb-3">
+              <label for="current-password" class="form-label">Current password</label>
+              <input type="password" class="form-control" id="current-password" name="currentPassword" required>
+              <div class="invalid-feedback">Please enter your current password.</div>
+            </div>
+            <div class="mb-3">
+              <label for="new-password" class="form-label">New password</label>
+              <input type="password" class="form-control" id="new-password" name="newPassword" required>
+              <div class="invalid-feedback">Please enter a new password.</div>
+            </div>
+            <div class="mb-3">
+              <label for="confirm-new-password" class="form-label">Confirm new password</label>
+              <input type="password" class="form-control" id="confirm-new-password" name="confirmNewPassword"
+                required>
+              <div class="invalid-feedback">Please confirm your new password.</div>
+            </div>
+            <button type="button" class="btn btn-primary">Change password</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
