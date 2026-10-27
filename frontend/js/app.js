@@ -13,6 +13,7 @@
   };
   var loadedViews = {};
   var loadingViews = {};
+  var viewSections = {};
 
   function getViewName() {
     var viewName = window.location.hash.substring(1);
@@ -30,12 +31,19 @@
     $(".borrowd-view").addClass("d-none");
     $("#" + viewName + "-view").removeClass("d-none");
     updateActiveLink(viewName);
+    window.scrollTo({ top: 0, behavior: "auto" });
+  }
+
+  function allViewsFinished() {
+    return Object.keys(viewFiles).every(function (viewName) {
+      return loadedViews[viewName];
+    });
   }
 
   function loadView(viewName) {
     if (loadedViews[viewName]) {
-      if (getViewName() === viewName) {
-        showView(viewName);
+      if (allViewsFinished()) {
+        showView(getViewName());
       }
       return;
     }
@@ -45,25 +53,30 @@
     }
 
     loadingViews[viewName] = true;
+    viewSections[viewName] = $("<section>", {
+      id: viewName + "-view",
+      class: "borrowd-view d-none"
+    }).appendTo("#app");
+
     $.get("../views/" + viewFiles[viewName])
       .done(function (viewContent) {
-        $("<section>", {
-          id: viewName + "-view",
-          class: "borrowd-view d-none"
-        })
-          .html(viewContent)
-          .appendTo("#app");
+        viewSections[viewName].html(viewContent);
         loadedViews[viewName] = true;
         loadingViews[viewName] = false;
-        if (getViewName() === viewName) {
-          showView(viewName);
+        if (allViewsFinished()) {
+          showView(getViewName());
         }
       })
       .fail(function () {
-        loadingViews[viewName] = false;
-        $("#app").html(
-          '<div class="container"><p class="alert alert-danger" role="alert">Unable to load this page.</p></div>'
+        viewSections[viewName].html(
+          '<div class="alert alert-danger" role="alert">This page could not be loaded. Please refresh the page.</div>'
         );
+        console.error("Unable to load view:", viewFiles[viewName]);
+        loadedViews[viewName] = true;
+        loadingViews[viewName] = false;
+        if (allViewsFinished() && getViewName() === viewName) {
+          showView(viewName);
+        }
       });
   }
 

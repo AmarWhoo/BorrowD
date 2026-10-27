@@ -6,14 +6,14 @@
 - Entities: users, books, authors, categories, loans, reviews.
 
 ## Technology stack
-- Frontend: HTML, CSS, JavaScript, jQuery, Bootstrap 5, single-page application (SPA)
+- Frontend: HTML, CSS, JavaScript, jQuery, Bootstrap 5, single-page application (SPA), Fonts: Lora and Nunito (Google Fonts)
 - Backend: PHP with FlightPHP (REST API), PDO, MySQL
 - Local server: XAMPP
 
 ## Folder structure
-- frontend/: css/, js/, views/ (one HTML file per view), assets/
+- frontend/: html/ (index.html, the SPA entry point), views/ (one HTML file per view), js/, css/ (styles.css from the template, theme.css with our theme), assets/ (template assets)
 - backend/: routes/, services/, dao/, middleware/, config/, logs/
-- docs/: AI_LOG.md and other documentation
+- docs/: AI_LOG.md, erd.png and other documentation
 
 ## Frontend rules
 - Each view is in its own file in frontend/views/.
