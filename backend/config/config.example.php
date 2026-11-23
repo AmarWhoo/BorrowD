@@ -6,6 +6,9 @@ class Config
     public static function DB_NAME()     { return self::get_env('DB_NAME', 'example'); }
     public static function DB_USER()     { return self::get_env('DB_USER', 'root'); }
     public static function DB_PASSWORD() { return self::get_env('DB_PASSWORD', ''); }
+    // External API: Open Library (no API key needed); timeout in seconds
+    public static function OPEN_LIBRARY_URL()     { return self::get_env('OPEN_LIBRARY_URL', 'https://openlibrary.org'); }
+    public static function OPEN_LIBRARY_TIMEOUT() { return self::get_env('OPEN_LIBRARY_TIMEOUT', 5); }
 
     // Environment variables (set on the server) win over the default values above.
     public static function get_env($name, $default)
